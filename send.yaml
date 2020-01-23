@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  tasks:
+    - name: copy file to remote host
+      copy:
+        src: /home/cloud_user/terraform_0.12.20_linux_386.zip
+        dest: /home/cloud_user/
